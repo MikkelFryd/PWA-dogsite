@@ -1,0 +1,47 @@
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+
+
+footer {
+    height: 20vh;
+    background-color: #333;
+    text-align: center;
+}
+
+a {
+    font-size: 2rem;
+    text-decoration-line: none;
+    color: aliceblue;
+    opacity: 0.2;
+}
+
+a:hover {
+    animation-name: animationlink;
+    animation-play-state: running;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: all .2s ease-in-out;
+}
+
+@keyframes animationlink {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}

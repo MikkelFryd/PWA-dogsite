@@ -1,0 +1,50 @@
+{
+    "name": "Hent en hund til mig ",
+    "short_name": "hent en hund",
+    "description": "Henter en ordentlig hund",
+    "start_url": "./index.html",
+    "scope": "./",
+    "background_color": "#003366",
+    "theme_color": "#00cc66",
+    "display": "standalone",
+
+    "icons": [
+    {
+        "src": "./assets/images/dogicon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "background_color": "#fff",
+        "purpose": "any"
+    },
+    {
+        "src": "./assets/images/dogicon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "background_color": "#fff",
+        "purpose": "any"
+    },
+    {
+        "src": "./assets/images/dogicon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "background_color": "#fff",
+        "purpose": "maskable"
+
+    },
+    {
+        "src": "./assets/images/dogicon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "background_color": "#fff",
+        "purpose": "maskable"
+    }
+],
+
+"shotcuts": [{
+    "name": "info",
+    "short_name": "info",
+    "description": "om min hund",
+    "url": "./info.html",
+    "icons": [{"src": "./assets/images/dogicon-512x512.png","sizes": "512x512"}]
+}]
+}
