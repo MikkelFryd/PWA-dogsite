@@ -18,7 +18,8 @@
         </header>
         
         <main>
-            <img src="./assets/images/fetchimage.png" alt="Billede af hund">
+            <img id="dogimg" alt="Billede af hund">
+            <button onclick="getDogs(dogurl)">Hent tilfældig hund</button>
         </main>
         
         <footer>
@@ -26,6 +27,25 @@
         </footer>
         
         <script src="./index.js" type="text/javascript"></script>
+
+        <script>
+            const image = document.getElementById('dogimg')
+            const dogurl = 'https://dog.ceo/api/breeds/image/random'
+
+            getDogs(dogurl)
+
+            function getDogs(dogurl) {
+                fetch(dogurl)
+                .then(res => res.json())
+                .then(json => save(json))
+            }
+
+            function save(result) {
+                data = result
+                image.src = data.message
+            }
+
+        </script>
     </div>
 </body>
 </html>

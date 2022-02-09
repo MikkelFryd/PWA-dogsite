@@ -8,9 +8,13 @@ h1 {
 }
 
 main {
-    width: 90%;
+    width: 50%;
     margin: auto;
     justify-content: center;
+}
+
+img {
+    max-width: 500px;
 }
 
 

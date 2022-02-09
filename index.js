@@ -15,3 +15,4 @@ if ("serviceWorker" in navigator) {
 } else {
     alert("pwa not supported")
 }
+
