@@ -22,5 +22,12 @@ self.addEventListener('install', function(event) {
 })
 
 self.addEventListener('fetch', function(e) {
-    console.log('Intercept req: '+e.request.url)
+    e.respondWith(
+        caches.open('my-site-cache').then(function (cache) {
+            return fetch(e.request).then(function (response) {
+                cache.put(e.request, response.clone())
+                return response
+            })
+        })
+    )
 })
