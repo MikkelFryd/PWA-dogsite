@@ -35,14 +35,26 @@
             getDogs(dogurl)
 
             function getDogs(dogurl) {
+
+            
                 fetch(dogurl)
                 .then(res => res.json())
                 .then(json => save(json))
-            }
 
-            function save(result) {
-                data = result
-                image.src = data.message
+                .catch(err => {
+                    window.location.href = "https://mikk7021.github.io/PWA-dogsite/info.html"
+                    // const offlinehtml = `
+                    //     <h2>Du er desværre offline<h2/>
+                    //     <img src="./assets/images/fetchimage.png"></img>
+                    // `
+                    // const main = document.querySelector('main')
+                    // main.innerHTML = offlinehtml
+                })
+
+                function save(result) {
+                    data = result
+                    image.src = data.message
+                }
             }
 
         </script>

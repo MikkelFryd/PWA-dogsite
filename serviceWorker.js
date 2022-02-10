@@ -16,18 +16,21 @@ self.addEventListener('install', function(event) {
 
         .then(function(cache) {
             console.log('Opened cache')
+
             return cache.addAll(urlsToCache)
         })
-    )
-})
-
-self.addEventListener('fetch', function(e) {
-    e.respondWith(
-        caches.open('my-site-cache').then(function (cache) {
+        )
+    })
+    
+    self.addEventListener('fetch', function(e) {
+        e.respondWith(
+            caches.open('my-site-cache').then(function (cache) {
             return fetch(e.request).then(function (response) {
-                cache.put(e.request, response.clone())
+                cache.put(response)
+                console.log(response)
                 return response
             })
         })
     )
 })
+
