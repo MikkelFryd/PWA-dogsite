@@ -26,7 +26,7 @@ self.addEventListener('install', function(event) {
         e.respondWith(
             caches.open('my-site-cache').then(function (cache) {
             return fetch(e.request).then(function (response) {
-                cache.put(response)
+                cache.add(response)
                 console.log(response)
                 return response
             })
