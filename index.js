@@ -33,11 +33,6 @@ function getDogs() {
 
 function save(result) {
     image.src = result.message;
-    
-    caches.open('my-site-cache').then(function(cache) {
-        console.log('Opened cache in INDEX.js')
-        return cache.add(result.message)
-    })
 }
 
 getDogs();
