@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@media only screen and (max-width: 667px) {
+  body {
+    background: #240e00;
+    background: -webkit-gradient(linear, left bottom, left top, from(#240e00), color-stop(0%, #1597c4), color-stop(80%, white));
+    background: linear-gradient(0deg, #240e00 0%, #1597c4 0%, white 80%);
+  }
+  .indexcontainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 20% 65% 15%;
+        grid-template-rows: 20% 65% 15%;
+  }
+  .indexcontainer header {
+    display: -ms-grid;
+    display: grid;
+  }
+  .indexcontainer header h1 {
+    font-family: 'Roboto';
+    text-align: center;
+    font-weight: 400;
+    color: #333;
+  }
+  .indexcontainer header a {
+    text-decoration: none;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #333;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .indexcontainer main {
+    width: 90%;
+    margin: auto;
+    height: 525px;
+  }
+  .indexcontainer main img {
+    width: 100%;
+    max-height: 420px;
+  }
+  .indexcontainer footer {
+    display: -ms-grid;
+    display: grid;
+  }
+  .indexcontainer footer button {
+    margin: auto;
+    width: 60%;
+    height: 40%;
+    border: double;
+    border-radius: 8px;
+    border-width: 6px;
+    font-weight: 100;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .indexcontainer footer button:hover {
+    color: #fff;
+    background-color: #333;
+  }
+  .indexcontainer .infoarticle {
+    width: 90%;
+    margin: auto;
+    height: 625px;
+  }
+  .indexcontainer .infoarticle img {
+    width: 100%;
+    max-height: 420px;
+  }
+  .indexcontainer .infoarticle h2 {
+    font-family: 'Roboto';
+    text-align: center;
+  }
+  .indexcontainer .infoarticle p {
+    font-family: 'Roboto';
+  }
+  .indexcontainer footer {
+    text-align: center;
+  }
+  .indexcontainer footer a {
+    text-decoration: none;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #333;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=Mystyle.css.map */
