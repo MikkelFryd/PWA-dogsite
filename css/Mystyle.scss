@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@media only screen and (max-width: 667px) {
+    body {
+        background: rgb(36,14,0);
+        background: linear-gradient(0deg, rgba(36,14,0,1) 0%, rgba(21,151,196,1) 0%, rgba(255,255,255,1) 80%);
+    }
+    .indexcontainer {
+        display: grid;
+        grid-template-rows: 20% 65% 15%;
+
+        header {
+            display: grid;
+            h1 {
+                font-family: 'Roboto';
+                text-align: center;
+                font-weight: 400;
+                color: #333;
+            }
+            a {
+                text-decoration: none;
+                text-decoration-line: underline;
+                color: #333;
+                font-family: 'Roboto';
+                font-weight: 600;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+        main {
+            width: 90%;
+            margin: auto;
+            height: 525px;
+            img {
+                width: 100%;
+                max-height: 420px;
+            }
+        }
+        footer {
+            display: grid;
+            button {
+                margin: auto;
+                width: 60%;
+                height: 40%;
+                border: double;
+                border-radius: 8px;
+                border-width: 6px;
+                font-weight: 100;
+                font-size: 0.9rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+            }
+
+            button:hover {
+                color: #fff;
+                background-color: #333;
+            }
+        }
+        .infoarticle {
+          
+                width: 90%;
+                margin: auto;
+                height: 625px;
+                img {
+                    width: 100%;
+                    max-height: 420px;
+                }
+                h2 {
+                    font-family: 'Roboto';
+                    text-align: center;
+                }
+                p {
+                    font-family: 'Roboto';
+                }
+
+            }
+            footer {
+                text-align: center;
+                a {
+                text-decoration: none;
+                text-decoration-line: underline;
+                color: #333;
+                font-family: 'Roboto';
+                font-size: 1.2rem;
+                }
+                
+            }
+        }
+        
+        }
+    
